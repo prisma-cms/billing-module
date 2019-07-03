@@ -1,0 +1,8 @@
+
+type InvoiceResponse {
+  success: Boolean!
+  message: String
+  errors: [Error!]!
+  data: Invoice
+}
+ 

@@ -1,0 +1,9 @@
+
+type Invoice {
+  id: ID! @unique
+  name: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  Items: [InvoiceItem!]!
+  CreatedBy: User
+}

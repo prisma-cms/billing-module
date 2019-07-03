@@ -1,0 +1,25 @@
+
+
+
+type Mutation {
+
+  createInvoiceProcessor(
+    data: InvoiceCreateInput!
+  ): InvoiceResponse!
+
+  updateInvoiceProcessor(
+    data: InvoiceUpdateInput!
+    where: InvoiceWhereUniqueInput!
+  ): InvoiceResponse!
+
+  createInvoiceItemProcessor(
+    data: InvoiceItemCreateInput!
+  ): InvoiceItemResponse!
+
+  updateInvoiceItemProcessor(
+    data: InvoiceItemUpdateInput!
+    where: InvoiceItemWhereUniqueInput!
+  ): InvoiceItemResponse!
+
+}
+

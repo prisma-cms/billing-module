@@ -1,0 +1,14 @@
+
+type InvoiceItem {
+  id: ID! @unique
+  name: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+
+  """Единицы измерения"""
+  units: String
+  quantity: Float
+  cost: Float
+  Invoice: Invoice
+  CreatedBy: User
+}
